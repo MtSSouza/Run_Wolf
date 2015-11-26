@@ -65,7 +65,7 @@ public class SchoollingParallax : MonoBehaviour {
 		}
 
 		else if (this.transform.name.Equals ("Parallax1.1")) {
-			speed = 1f;
+			speed = 0.8f;
 			this.transform.position -= new Vector3(speed * Time.deltaTime, 0f, 0f);
 		}
 
@@ -97,7 +97,7 @@ public class SchoollingParallax : MonoBehaviour {
 		}
 		
 		else if (this.transform.name.Equals ("Parallax1.1(2)")) {
-			speed = 1f;
+			speed = 0.8f;
 			this.transform.position -= new Vector3(speed * Time.deltaTime, 0f, 0f);
 		}
 		

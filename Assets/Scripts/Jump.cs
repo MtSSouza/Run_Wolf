@@ -25,10 +25,17 @@ public class Jump : MonoBehaviour {
 	void Pulo()
 	{
 		
+		if (Input.touchSupported) {
+			if(Input.GetMouseButton(0))
+			{
+				this.rigidbody2D.AddForce(Vector3.up * 200f);
+			}
+		}
 		if (Input.GetKeyDown(KeyCode.Space)) 
 		{
 			this.rigidbody2D.AddForce(Vector3.up * 200f);
 		}
+
 	}
 	
 	void Update () 
