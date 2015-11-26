@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class ObjectsTimer : MonoBehaviour {
 
-    private float timerSpawnObject = 5.0f;
+    private float timerSpawnObject = 3.0f;
     public static int randomObject;
 	public List<GameObject> prefabs = new List<GameObject>();
 	// Use this for initialization
@@ -18,12 +18,14 @@ public class ObjectsTimer : MonoBehaviour {
         timerSpawnObject -= Time.deltaTime;
         if (timerSpawnObject <= 0)
         {
-            timerSpawnObject = Random.Range(5, 10);
+            timerSpawnObject = Random.Range(2, 7);
             randomObject = Random.Range(0,6);
 			GameObject novo = Instantiate(prefabs[randomObject], new Vector3(7.54f, -1.38f, 0f),Quaternion.identity) as GameObject;
 			novo.AddComponent<ObjectsMove>();
+			novo.GetComponent<BoxCollider2D>().isTrigger = true;
+			print(timerSpawnObject + " / " + randomObject);
 		}
      
-            print(timerSpawnObject + " / " + randomObject);
+            
 	}
 }
