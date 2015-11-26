@@ -85,7 +85,7 @@ public class SchoollingParallax : MonoBehaviour {
 		}
 
 		else if (this.transform.name.Equals ("Lua")) {
-			speed = 0.05f;
+			speed = 0.01f;
 			this.transform.position -= new Vector3(speed * Time.deltaTime, 0f, 0f);
 		}
 		//
