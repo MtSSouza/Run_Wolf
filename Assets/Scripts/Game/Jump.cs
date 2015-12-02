@@ -11,6 +11,7 @@ public class Jump : MonoBehaviour {
 		{
 			flyOk = true;
 			this.GetComponent<Animator>().SetBool("toJump", false);
+            this.GetComponent<Animator>().SetBool("toRun", true);
 		}
 	}
 	void OnCollisionExit2D(Collision2D coll)
@@ -19,6 +20,7 @@ public class Jump : MonoBehaviour {
 		{
 			flyOk = false;
 			this.GetComponent<Animator>().SetBool("toJump", true);
+            this.GetComponent<Animator>().SetBool("toRun", false);
 		}
 	}
 
