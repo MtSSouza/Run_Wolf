@@ -61,7 +61,7 @@ public class PlayGame : MonoBehaviour {
         }
 
         if (nextFase) {
-            //Application.LoadLevel(1);
+            Application.LoadLevel(1);
         }
 	}
 }
