@@ -5,7 +5,7 @@ public class IntroButton : MonoBehaviour {
 
     public GameObject spr;
     private float opacityChange;
-    private float speed = 0.55f;
+    private float speed = 1f;
 	// Use this for initialization
 	void Start () {
         opacityChange = 0f;
