@@ -35,7 +35,7 @@ public class Jump : MonoBehaviour {
 		}
 		if (Input.GetKeyDown(KeyCode.Space)) 
 		{
-			this.rigidbody2D.AddForce(Vector3.up * 200f);
+			this.rigidbody2D.AddForce(Vector3.up * 250f);
 		}
 
 	}

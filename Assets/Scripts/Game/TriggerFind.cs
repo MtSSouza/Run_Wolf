@@ -11,7 +11,7 @@ public class TriggerFind : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D col)
 	{
 		if (col.tag.Equals ("Objects")) {
-			print("pqp");
+            Application.LoadLevel(2);
 		}
 	}
 
